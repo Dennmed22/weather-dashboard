@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather Dashboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Dashboard</title>
 </head>
+<header>
+  <h1 class="main-title">Weather Dashboard</h1>
+</header>
+<br>
+<!--user enters city to display results-->
+
 <body>
-    <script src= "script.js"></script>
+  <section class="inputs">
+    <input type="text" placeholder="Enter any city..." id="cityinput">
+
+    <button class="btn btn-danger" id="fetch-button">
+      Search
+    </button>
+    <!--Results being displayed-->
+      <br><br>
+    </section>
+    <section class="card card-rounded col-7 bg-white">
+      <header class="card-header text-center">
+        <h2 class="text-black"></h2>
+        <div class="container" id="issues"></div>
+        <section class="display">
+          <div class="wrapper">
+            <p id="cityoutput"></p>
+            <p id="description"></p>
+            <p id="temp"></p>
+            <p id="wind"></p>
+      </header>
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
